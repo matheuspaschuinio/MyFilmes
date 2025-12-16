@@ -1,0 +1,16 @@
+{
+    "name": "user/lista_filmes",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matheus Paschuinio",
+            "email": "matheus.paschuinio@fatec.sp.gov.br"
+        }
+    ],
+    "require": {}
+}
