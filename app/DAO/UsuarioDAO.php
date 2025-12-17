@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Core\Database;
 
     class UsuarioDAO{
@@ -24,7 +25,18 @@ use Core\Database;
             {
                 return false;
             }
+        }
+
+        public function inserir(User $usuario) 
+        {
+            $sql = "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)";
             
-             
+            $stmt = $this->db->prepare($sql);
+            
+            $stmt->bindValue(1, $usuario->getNome());
+            $stmt->bindValue(2, $usuario->getEmail());
+            $stmt->bindValue(3, $usuario->getSenha()); 
+
+            return $stmt->execute();
         }
     }
