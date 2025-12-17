@@ -1,5 +1,7 @@
 <?php
 
+namespace App\DAO;
+
 use App\Models\Filme;
 use Core\Database;
 
@@ -21,14 +23,14 @@ use Core\Database;
 
                 $stmt->bindValue(1, $f->getIdUsuario());
                 $stmt->bindValue(2, $f->getTitulo());
-                $stmt->bindValue(4, $f->getImagem());
-                $stmt->bindValue(3, $f->getNota());
+                $stmt->bindValue(3, $f->getImagem());
+                $stmt->bindValue(4, $f->getNota());
 
                 return $stmt->execute();
             }
             catch(PDOException $e)
             {
-                return "Erro ao inserir";
+                return false;
             }
         }
 
@@ -46,7 +48,7 @@ use Core\Database;
             }
             catch(PDOException $e)
             {
-                return "Erro ao buscar filmes";
+                return false;
             }
         }
 
@@ -64,7 +66,7 @@ use Core\Database;
             }
             catch(PDOException $e)
             {
-                return "Erro ao excluir";
+                return false;
             }
         }
     }

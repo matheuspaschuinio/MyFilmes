@@ -1,5 +1,7 @@
 <?php
 
+namespace App\DAO;
+
 use App\Models\User;
 use Core\Database;
 

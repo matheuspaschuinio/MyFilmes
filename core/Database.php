@@ -7,7 +7,7 @@ use PDO;
 class Database extends PDO{
     public function __construct(){
         parent:: __construct(
-            "mysql:hostname=localhost;dbname=myfilmes",
+            "mysql:host=localhost;dbname=myfilmes",
             "root",
             ""
         );
