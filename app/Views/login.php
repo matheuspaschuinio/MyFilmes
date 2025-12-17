@@ -12,7 +12,7 @@
         <div class="card-body">
             <h3 class="card-title text-center mb-4">🎬 CineFile</h3>
             
-            <form action="auth.php" method="POST">
+            <form action="login/entrar" method="POST">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" name="email" required>

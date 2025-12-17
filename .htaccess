@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteBase /lista_filmes/public/
+RewriteBase /MyFilmes/public/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

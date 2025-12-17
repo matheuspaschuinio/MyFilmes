@@ -13,7 +13,7 @@
             <a class="navbar-brand" href="#">🎬 CineFile</a>
             <div class="d-flex">
                 <span class="navbar-text me-3">Olá, Usuário</span>
-                <a href="logout.php" class="btn btn-outline-danger btn-sm">Sair</a>
+                <a href="login/sair" class="btn btn-outline-danger btn-sm">Sair</a>
             </div>
         </div>
     </nav>
@@ -52,7 +52,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="actions.php" method="POST" enctype="multipart/form-data">
+                    <form action="filmes/salvar" method="POST" enctype="multipart/form-data">
                         <input type="hidden" name="acao" value="cadastrar">
                         
                         <div class="mb-3">
