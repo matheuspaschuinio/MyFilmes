@@ -28,21 +28,17 @@
 
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
             
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="assets/uploads/exemplo.jpg" class="card-img-top" alt="Capa do Filme" style="height: 300px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Matrix</h5>
-                        <p class="card-text text-muted small">Ficção Científica</p>
-                        <span class="badge bg-warning text-dark">Nota: 10</span>
-                    </div>
-                    <div class="card-footer bg-white d-flex justify-content-between">
-                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                        <a href="actions.php?acao=deletar&id=1" class="btn btn-sm btn-outline-danger">Excluir</a>
+            <?php foreach($filmes as $filme): ?>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/uploads/<?= $filme['imagem'] ?>" class="card-img-top" ...>
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $filme['titulo'] ?></h5>
+                            <span class="badge bg-warning text-dark">Nota: <?= $filme['nota'] ?></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div> </div>
+            <?php endforeach; ?>
 
     <div class="modal fade" id="modalFilme" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog">

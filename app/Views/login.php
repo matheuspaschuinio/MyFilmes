@@ -27,7 +27,7 @@
             </form>
             
             <div class="mt-3 text-center">
-                <small>Ainda não tem conta? <a href="#">Cadastre-se</a></small>
+                <small>Ainda não tem conta? <a href="/MyFilmes/login/cadastro">Cadastre-se</a></small>
             </div>
         </div>
     </div>

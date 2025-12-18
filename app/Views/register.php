@@ -10,9 +10,9 @@
 
     <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
         <div class="card-body">
-            <h3 class="card-title text-center mb-4">📝 Criar Conta</h3>
+            <h3 class="card-title text-center mb-4"> Criar Conta</h3>
             
-            <form action="/lista_filmes/public/login/salvar" method="POST">
+            <form action="/MyFilmes/login/salvar" method="POST">
                 
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome Completo</label>
@@ -32,7 +32,7 @@
 
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-success">Cadastrar</button>
-                    <a href="/lista_filmes/public/login" class="btn btn-outline-secondary">Voltar para Login</a>
+                    <a href="/MyFilmes/login" class="btn btn-outline-secondary">Voltar para Login</a>
                 </div>
             </form>
         </div>
