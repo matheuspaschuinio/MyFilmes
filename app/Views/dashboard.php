@@ -12,7 +12,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">🎬 CineFile</a>
             <div class="d-flex">
-                <span class="navbar-text me-3">Olá, Usuário</span>
+                <span class="navbar-text me-3">Olá, <?= $_SESSION['nome'] ?></span>
                 <a href="login/sair" class="btn btn-outline-danger btn-sm">Sair</a>
             </div>
         </div>
@@ -31,7 +31,7 @@
             <?php foreach($filmes as $filme): ?>
                 <div class="col">
                     <div class="card h-100 shadow-sm">
-                        <img src="assets/uploads/<?= $filme['imagem'] ?>" class="card-img-top" ...>
+                        <img src="/MyFilmes/public/assets/uploads/<?= $filme['imagem'] ?>" class="card-img-top" ...>
                         <div class="card-body">
                             <h5 class="card-title"><?= $filme['titulo'] ?></h5>
                             <span class="badge bg-warning text-dark">Nota: <?= $filme['nota'] ?></span>
