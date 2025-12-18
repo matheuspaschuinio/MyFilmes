@@ -4,6 +4,8 @@ namespace App\DAO;
 
 use App\Models\User;
 use Core\Database;
+use PDO;
+use PDOException;
 
     class UsuarioDAO{
         private $db;

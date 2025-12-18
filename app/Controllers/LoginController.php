@@ -44,11 +44,18 @@ use App\Models\User;
                 $_SESSION['id_usuario'] = $usuarioDados['id_usuario'];
                 $_SESSION['nome'] = $usuarioDados['nome'];
 
-                header('Location: /MyFilmes/public/filmes');
+                header('Location: /MyFilmes/filmes');
             }
             else {
                 echo "Email ou senha inválidos!";
             }
+        }
+
+        public function sair(){
+            session_start();
+            session_destroy();
+            header('Location: /MyFilmes/login');
+            exit;
         }
     }
 ?>

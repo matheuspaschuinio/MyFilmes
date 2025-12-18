@@ -4,6 +4,8 @@ namespace App\DAO;
 
 use App\Models\Filme;
 use Core\Database;
+use PDO;
+use PDOException;
 
     class FilmeDAO{
         private $db;
